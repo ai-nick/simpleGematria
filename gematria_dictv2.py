@@ -94,4 +94,3 @@ full_reduction = {
 	9 : ('i','r'),
 }
 
-print(single_reduction)
