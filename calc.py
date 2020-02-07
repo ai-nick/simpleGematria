@@ -6,16 +6,12 @@ alphabet_conspiracy_string = "abcdefghijklmnopqrstuvwxyz"
 
 total = 0
 for n in word:
-
-	numerical_value = alphabet_conspiracy_string.find(n)
+	#strings are zero indexed so we add one to each value
+	numerical_value = alphabet_conspiracy_string.find(n) + 1
 
 	if n != -1:
 		total += numerical_value
-		print("{} = {}".format(n, numerical_value)) 
-	
-	if n == 'a':
-		total.append(1)
-		print('A = 1')
+		print("{} = {}".format(n, numerical_value))
 
 print(f"Your word's simple english gematria sums to: {total}")
 
